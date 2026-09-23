@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+test-results/
+playwright-report/
+.env
+.env.*
+!.env.example
+
+# Original photos and videos (may contain location data); the site uses the stripped copies in public/media
+assets/
