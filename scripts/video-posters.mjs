@@ -5,7 +5,7 @@ import { writeFileSync } from 'node:fs'
 const browser = await chromium.launch({ channel: 'chrome' })
 try {
   const page = await browser.newPage()
-  await page.goto('http://127.0.0.1:5173/Personal-Website/')
+  await page.goto('http://127.0.0.1:5173/')
   for (const [filename, selector] of [
     ['sports/bench-225', '#passions video'],
     ['sports/flag-football', '#sports video'],

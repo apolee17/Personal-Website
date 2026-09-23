@@ -29,7 +29,7 @@ function mediaManifest(): Plugin {
   }
 }
 
-const repository = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'Personal-Website'
+const repository = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'apollolee29.github.io'
 const inferredBase = repository && !repository.endsWith('.github.io') ? `/${repository}/` : '/'
 
 export default defineConfig({

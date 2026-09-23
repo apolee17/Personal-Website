@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open **http://127.0.0.1:5173/Personal-Website/**. For the production bundle, run `npm run build`, then `npm run preview` and open **http://127.0.0.1:4173/Personal-Website/**.
+Open **http://127.0.0.1:5173/**. For the production bundle, run `npm run build`, then `npm run preview` and open **http://127.0.0.1:4173/**.
 
 ## Editing the story
 
@@ -71,17 +71,17 @@ npm run test:e2e
 npm run test:e2e -- --config playwright.production.config.ts
 ```
 
-Playwright uses installed Google Chrome to check mobile, tablet, desktop, and reduced-motion layouts. Checks cover real photo decoding, all four videos playing, PDF links and bytes, section order, navigation, keyboard controls, overflow, console/network errors, automated accessibility rules, the square food grid, horizontal photo scrolling and pause controls, bio placement, tutoring cards, and the email link. Screenshots are written to `test-results/`.
+Playwright uses installed Google Chrome to check mobile, tablet, desktop, and reduced-motion layouts. Checks cover real photo decoding, all four videos playing, PDF links and bytes, section order, navigation, keyboard controls, overflow, console/network errors, automated accessibility rules, the square food grid, continuously scrolling initiation photos, bio placement, tutoring cards, and the email link. Screenshots are written to `test-results/`.
 
-The production configuration checks `dist/` with the `/Personal-Website/` base path. Build first.
+The production configuration checks `dist/` at the root `/` base path. Build first.
 
 ## GitHub Pages over HTTPS
 
-Repository: **https://github.com/apolee17/Personal-Website**
+Repository: **https://github.com/apollolee29/apollolee29.github.io** (owned by the free `apollolee29` organization, which belongs to the `apolee17` account)
 
-Expected site URL after successful deployment: **https://apolee17.github.io/Personal-Website/**
+Live site: **https://apollolee29.github.io/**
 
-The Vite base path defaults to **`/Personal-Website/`** and automatically derives the repository name from `GITHUB_REPOSITORY` in Actions. User/organization repositories ending in `.github.io` use `/`. `VITE_BASE_PATH` can override this for other hosts. Canonical and Open Graph URLs in `index.html` target the repository above; update those if you change hosts. The default social image is a 1200×630 PNG in `public/social-preview.png` and the favicon is `public/favicon.svg`.
+The Vite base path defaults to **`/`** and automatically derives the repository name from `GITHUB_REPOSITORY` in Actions. User/organization repositories ending in `.github.io` use `/`. `VITE_BASE_PATH` can override this for other hosts. Canonical and Open Graph URLs in `index.html` target the repository above; update those if you change hosts. The default social image is a 1200×630 PNG in `public/social-preview.png` and the favicon is `public/favicon.svg`.
 
 1. Authenticate Git to GitHub on this computer using GitHub's normal sign-in process. Do not paste access tokens into website source files or chat.
 2. This workspace is already initialized on `main` with the supplied repository as `origin`; no commit or push has been made. Once authentication works, inspect the remote. If it already contains work, fetch and reconcile these files with its history before committing. If it is empty, configure your normal Git author identity, commit the site, and push `main`.

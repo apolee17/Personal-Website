@@ -6,7 +6,7 @@ export default defineConfig({
   workers: 1,
   reporter: 'list',
   use: {
-    baseURL: 'http://127.0.0.1:5173/Personal-Website/',
+    baseURL: 'http://127.0.0.1:5173/',
     channel: 'chrome',
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
@@ -19,7 +19,7 @@ export default defineConfig({
   ],
   webServer: {
     command: 'npm run dev -- --port 5173 --strictPort',
-    url: 'http://127.0.0.1:5173/Personal-Website/',
+    url: 'http://127.0.0.1:5173/',
     reuseExistingServer: !process.env.CI,
   },
 })
